@@ -15,7 +15,12 @@
         devShell = with pkgs; mkShell {
           buildInputs = [
             python
+
             elixir
+            elixir_ls
+
+            ghc
+            haskell-language-server
           ];
         };
       });
